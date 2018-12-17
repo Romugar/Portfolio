@@ -28,8 +28,8 @@
           </div>
       </div>
       <mat-card-actions class="card-actions" style="padding-bottom: 15px;">
-          <button matTooltipClass="my-tooltip" mat-button matTooltip="VIEW SOURCE CODE"><a href={{project.source}} target="_blank"><img class="project-source" src="assets/img/github.png" alt="source code"></a></button>
-          <button matTooltipClass="my-tooltip" *ngIf="project.view != ''" mat-button matTooltip="VIEW ONLINE" ><a href={{project.view}} target="_blank"><img class="project-view" src="assets/img/view.png" alt="view online"></a></button>
+          <button matTooltipClass="my-tooltip" mat-button matTooltip="VIEW SOURCE CODE"><a href={{project.source}} target="_blank" rel="noopener noreferrer"><img class="project-source" src="assets/img/github.png" alt="source code"></a></button>
+          <button matTooltipClass="my-tooltip" *ngIf="project.view != ''" mat-button matTooltip="VIEW ONLINE" ><a href={{project.view}} target="_blank" rel="noopener noreferrer"><img class="project-view" src="assets/img/view.png" alt="view online"></a></button>
       </mat-card-actions>
     </mat-card>
   </div>
