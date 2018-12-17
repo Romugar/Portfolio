@@ -1,35 +1,37 @@
-<mat-grid-list class="title" cols="1" rowHeight="100px">
-  <mat-grid-tile>PROJECTS</mat-grid-tile>
-</mat-grid-list>
-
-<div class="filter-buttons">
-    <mat-button-toggle-group  #group="matButtonToggleGroup">
-        <mat-button-toggle (click)="filter(group.value)" class="filter-button" value="">All</mat-button-toggle>
-        <mat-button-toggle (click)="filter(group.value)" class="filter-button" value="javascript">JavaScript</mat-button-toggle>
-        <mat-button-toggle (click)="filter(group.value)" class="filter-button" value="react">React</mat-button-toggle>
-        <mat-button-toggle (click)="filter(group.value)" class="filter-button" value="d3">D3</mat-button-toggle>
-        <mat-button-toggle (click)="filter(group.value)" class="filter-button" value="node">Node</mat-button-toggle>
-        <mat-button-toggle (click)="filter(group.value)" class="filter-button" value="python">Python</mat-button-toggle>
-      </mat-button-toggle-group>
+<div class="main-container">
+  <mat-grid-list class="title" cols="1" rowHeight="100px">
+    <mat-grid-tile>PROJECTS</mat-grid-tile>
+  </mat-grid-list>
+  
+  <div class="filter-buttons">
+      <mat-button-toggle-group  #group="matButtonToggleGroup">
+          <mat-button-toggle (click)="filter(group.value)" class="filter-button" value="">All</mat-button-toggle>
+          <mat-button-toggle (click)="filter(group.value)" class="filter-button" value="javascript">JavaScript</mat-button-toggle>
+          <mat-button-toggle (click)="filter(group.value)" class="filter-button" value="react">React</mat-button-toggle>
+          <mat-button-toggle (click)="filter(group.value)" class="filter-button" value="d3">D3</mat-button-toggle>
+          <mat-button-toggle (click)="filter(group.value)" class="filter-button" value="node">Node</mat-button-toggle>
+          <mat-button-toggle (click)="filter(group.value)" class="filter-button" value="python">Python</mat-button-toggle>
+        </mat-button-toggle-group>
+  </div>
+  
+    <div class="projects-container row">
+      <mat-card class="project-card" *ngFor="let project of projects | filter:filteredBy:'tag'">
+        <mat-card-header style="color: darkslategray">
+          <mat-card-title>{{project.name}}</mat-card-title>
+        </mat-card-header>
+        <div class="image-container">
+            <img mat-card-image src={{project.image}} alt={{project.name}}>
+            <div class="overlay">
+                <ul class="description">
+                    <li *ngFor="let item of project.description">{{item}}</li>
+                </ul>
+            </div>
+        </div>
+        <mat-card-actions class="card-actions" style="padding-bottom: 15px;">
+            <a matTooltipClass="my-tooltip" mat-button matTooltip="VIEW SOURCE CODE" href={{project.source}} target="_blank" rel="noopener noreferrer"><img class="project-source" src="assets/img/github.png" alt="source code"></a>
+            <a matTooltipClass="my-tooltip" *ngIf="project.view != ''" mat-button matTooltip="VIEW ONLINE"  href={{project.view}} target="_blank" rel="noopener noreferrer"><img class="project-view" src="assets/img/view.png" alt="view online"></a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
 </div>
 
-
-  <div class="projects-container row">
-    <mat-card class="project-card" *ngFor="let project of projects | filter:filteredBy:'tag'">
-      <mat-card-header style="color: darkslategray">
-        <mat-card-title>{{project.name}}</mat-card-title>
-      </mat-card-header>
-      <div class="image-container">
-          <img mat-card-image src={{project.image}} alt={{project.name}}>
-          <div class="overlay">
-              <ul class="description">
-                  <li *ngFor="let item of project.description">{{item}}</li>
-              </ul>
-          </div>
-      </div>
-      <mat-card-actions class="card-actions" style="padding-bottom: 15px;">
-          <a matTooltipClass="my-tooltip" mat-button matTooltip="VIEW SOURCE CODE" href={{project.source}} target="_blank" rel="noopener noreferrer"><img class="project-source" src="assets/img/github.png" alt="source code"></a>
-          <a matTooltipClass="my-tooltip" *ngIf="project.view != ''" mat-button matTooltip="VIEW ONLINE"  href={{project.view}} target="_blank" rel="noopener noreferrer"><img class="project-view" src="assets/img/view.png" alt="view online"></a>
-      </mat-card-actions>
-    </mat-card>
-  </div>

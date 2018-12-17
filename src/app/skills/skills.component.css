@@ -31,6 +31,10 @@
 }
 
 @media (max-width: 600px) {
+  .main-container {
+    padding-top: 50px;
+  }
+  
   .skills-container {
     position: absolute;
     left: 10%;

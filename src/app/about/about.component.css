@@ -25,6 +25,9 @@
 }
 
 @media (max-width: 600px) {
+  .main-container {
+    padding-top: 50px;
+  }
   .jumbotron {
     top: 30%;
     left: 5%;

@@ -67,3 +67,9 @@ li::before {
     font-size: 20px;
   }
 }
+
+@media (max-width: 600px) {
+  .main-container {
+    padding-top: 50px;
+  }
+}

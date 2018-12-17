@@ -90,6 +90,10 @@
 }
 
 @media (max-width: 600px) {
+  .main-container {
+    padding-top: 50px;
+  }
+  
   .projects-container{
     padding-top: 25px;
     padding-left: 50px;
