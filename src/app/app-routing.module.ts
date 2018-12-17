@@ -7,6 +7,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
 
 const appRoutes: Routes = [
   { path: '', component: IntroComponent},
@@ -15,6 +16,8 @@ const appRoutes: Routes = [
   { path: 'skills', component: SkillsComponent},
   { path: 'education', component: EducationComponent},
   { path: 'contact', component: ContactComponent},
+  { path: 'not-found', component: ErrorpageComponent},
+  { path: '**', redirectTo: '/not-found'}
 ];
 
 @NgModule({

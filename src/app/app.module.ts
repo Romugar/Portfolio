@@ -27,6 +27,7 @@ import { MatToolbarModule,
   MatButtonToggleModule
   } from '@angular/material';
 import { FilterPipe } from './filter.pipe';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { FilterPipe } from './filter.pipe';
     SkillsComponent,
     EducationComponent,
     ContactComponent,
-    FilterPipe
+    FilterPipe,
+    ErrorpageComponent
   ],
   imports: [
     BrowserModule,
