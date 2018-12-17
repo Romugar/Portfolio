@@ -1,4 +1,3 @@
-
 .sidenav-container {
   height: 100%;
 }
@@ -21,7 +20,7 @@
     background-color: darkslategray;
     display: flex;
     flex-direction: row;
-    position: sticky;
+    position: fixed;
     justify-content: flex-start;
     align-items: center;
     top: 0;
