@@ -1,0 +1,56 @@
+.skills-container {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  right: 10%;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 200;
+  color: beige;
+  background-color: darkslategray;
+}
+
+.skill-name {
+  font-size: 30px;
+  color: crimson;
+}
+
+.image {
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.image-description {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    right: 10%;
+  }
+
+  .skill-name {
+    font-size: 20px;
+    color: crimson;
+  }
+
+  img {
+    max-width: 50px;
+  }
+
+  .image-description {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+  }
+}

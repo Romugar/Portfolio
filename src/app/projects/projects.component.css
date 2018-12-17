@@ -1,0 +1,108 @@
+.title {
+  font-size: 50px;
+  font-weight: 200;
+  color: beige;
+  background-color: darkslategray;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.filter-button {
+  background-color: darkslategray;
+  color: beige;
+}
+
+.filter-button:hover {
+  background-color: beige;
+  color: darkslategray;
+}
+
+.mat-button-toggle-checked {
+  background-color: beige !important;
+  color: darkslategray !important;
+  border: none !important;
+}
+
+.projects-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.project-card {
+  max-width: 400px;
+  margin-bottom: 50px;
+}
+
+.project-source {
+  max-width: 30px;
+}
+
+.project-view {
+  max-width: 35px;;
+}
+
+.image-container {
+  padding-top: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: darkslategray;
+}
+
+.image-container:hover .overlay {
+  opacity: 0.9;
+}
+
+.description {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  right: 5%;
+  text-align: left;
+}
+
+@media (max-width: 780px) {
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  .projects-container{
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .filter-buttons {
+    font-size: 14px;
+  }
+}
+
+::ng-deep .my-tooltip {
+  font-size: 15px;
+  color: beige;
+  background-color: crimson;
+}

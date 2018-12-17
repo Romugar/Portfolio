@@ -1,0 +1,42 @@
+.title {
+  font-size: 50px;
+  font-weight: 200;
+  color: beige;
+  background-color: darkslategray;
+}
+
+.jumbotron {
+  position: absolute;
+    top: 15%;
+    left: 10%;
+    right: 10%;
+    background-color: white;
+}
+
+.lead {
+  color: darkslategray;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.description {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  .jumbotron {
+    top: 30%;
+    left: 5%;
+    right: 5%;
+    background-color: white;
+  }
+
+  .lead {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}

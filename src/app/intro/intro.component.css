@@ -1,0 +1,86 @@
+img.bg {
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.intro-text{
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  right: 10%;
+  text-shadow: 2px 2px 5px rgb(36, 36, 36);
+  font-family: bitter;
+}
+
+.text1 {
+  font-size: 55px
+}
+
+.text2 {
+  font-size: 30px
+}
+
+:host ::ng-deep .enphasis2 {
+  color: crimson;
+  animation: fadeMe2 0.7s;
+}
+
+@keyframes fadeMe2 {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro-text{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    right: 5%;
+    text-shadow: 2px 2px 5px rgb(36, 36, 36);
+  }
+
+  .text1 {
+    font-size: 40px
+  }
+  
+  .text2 {
+    font-size: 20px
+  }
+
+  @keyframes fadeMe2 {
+    from {
+      font-size: 0px;
+    }
+    to {
+      font-size: 40px;
+    }
+  }
+}
+
+:host ::ng-deep .enphasis1 {
+  background: crimson;
+  animation: fadeMe1 0.7s
+}
+
+@keyframes fadeMe1 {
+  from {
+    background: none;
+  }
+  to {
+    background: crimson;
+  }
+}
+
+

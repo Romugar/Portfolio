@@ -1,0 +1,21 @@
+<mat-grid-list class="title" cols="1" rowHeight="100px">
+<mat-grid-tile>SKILLS</mat-grid-tile>
+</mat-grid-list>
+<div class="skills-container">
+    <div class="jumbotron shadow p-3 mb-5 bg-white rounded" *ngFor="let skillName of skillsNames; let i = index">
+        <span class="skill-name">
+          {{skillName}}
+        </span>
+        <mat-divider style="border-top: 1px solid darkseagreen"></mat-divider>
+        <div class="row">
+          <div *ngFor="let image of imagePath[i]; let j = index" >
+            <div class="image">
+              <img src={{image}}>
+              <div class="image-description">
+                <span>{{imageDescription[i][j]}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
