@@ -4,18 +4,17 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="!(isHandset$ | async)"
       style="background-color: darkslategray">
-        <div class="sidebar-header" routerLink="/" style="cursor:pointer; outline: none" (click)="mobileSidebarStatus ? drawer.toggle() : undefined; mobileSidebarStatus = false">
-          <div class="sidebar-img">
-            <img style="border-radius: 50%; box-shadow: 2px 2px 10px rgb(36, 36, 36);" src="assets/img/DSC00502_pequeña_cuadrada.jpg" alt="Roberto Muñoz García">
+        <div class="sidebar-header" routerLink="/" (click)="mobileSidebarStatus ? drawer.toggle() : undefined; mobileSidebarStatus = false">
+          <div>
+            <img class="sidebar-img" src="assets/img/DSC00502_pequeña_cuadrada.jpg" alt="Roberto Muñoz García">
           </div>
           <div class="sidebar-name">
-            <span style="font-size: 32px; font-weight:300">Roberto Muñoz García</span>
+            <span>Roberto Muñoz García</span>
           </div>
           <div class="sidebar-ocupation">
             <span>Web Developer</span>
             <hr style="border: 1px solid darkseagreen">
           </div>
-          
         </div>
         
     <mat-nav-list>
