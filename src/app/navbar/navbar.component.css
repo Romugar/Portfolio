@@ -15,6 +15,28 @@
   display: none;
 }
 
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: -24px;
+}
+
+.sidebar-img {
+  padding-top: 10px;
+}
+
+.sidebar-name {
+  font-size: 32px;
+  font-weight:300;
+  color: crimson;
+}
+
+.sidebar-ocupation {
+  color: lightsalmon;
+}
+
 @media (max-width: 600px) {
   .mat-toolbar.mat-primary {
     background-color: darkslategray;
