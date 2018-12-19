@@ -114,10 +114,11 @@ projects = [
   {
     name: 'Calculator',
     image: 'assets/img/calculator.jpg',
-    description: ['Add, Subtract, multiply and divide', 'You can chain operations until hit equal button'],
-    tag: 'javascript',
-    source: 'https://github.com/Romugar/JavaScript-Simple-Calculator',
-    view: 'https://codepen.io/Romugar/pen/oZBNLa'
+    description: ['Add, subtract, multiply and divide in a chain', 'Button to clear the display',
+    'Delete button to clear one character', 'Responsive', 'No eval()', 'Android clone calculator style'],
+    tag: 'angular',
+    source: 'https://github.com/Romugar/Angular-Basic-Calculator-Mobile-clone.',
+    view: 'https://romugarcalculatorv2.herokuapp.com/'
   },
   {
     name: 'Pomodoro clock',
